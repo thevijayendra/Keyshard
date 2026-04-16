@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: keyshard-api
+
+dkvs:
+  capacity:
+    max-entries: 100000
+    max-memory-mb: 512
+  eviction-policy: LRU
+  network:
+    port: 8888
+    threads: 4

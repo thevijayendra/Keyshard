@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: keyshard-core
+
+server:
+  port: 9091
+
+dkvs:
+  capacity:
+    max-entries: 100000
+    max-memory-mb: 512
+  eviction-policy: LRU
+  network:
+    port: 8888
+    threads: 4
+
+  reaper:
+    interval: 60000
